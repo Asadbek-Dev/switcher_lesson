@@ -7,15 +7,18 @@ body{
     align-items: center;
     height: 100vh;
     margin: 0;
+    transition: background .2s linear;
 }
+
+body.dark{
+    background-color: #292c35;
+}
+
+
 .checkbox{
     opacity: 0;
     position: absolute;
 }
-/* misol un */
-/* .checkbox:checked + .label .ball{
-    transform: translateX(24px);
-} */
 .label{
     position: relative;
     width: 50px;
@@ -26,6 +29,7 @@ body{
     align-items: center;
     padding: 5px;
     border-radius: 50px;
+    transform: scale(1.5);
 }
 .ball{
     position: absolute;
